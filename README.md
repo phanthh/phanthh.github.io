@@ -1,3 +1,0 @@
----
-permalink: /build/index.html 
----
