@@ -6,6 +6,7 @@
     "dev": "next dev",
     "start": "next start",
     "lint": "next lint",
+    "postbuild": "node ./scripts/generate-sitemap.mjs",
     "export": "npm run build && next export -o docs/ && next-image-export-optimizer",
     "deploy": "npm run export && touch docs/.nojekyll && git add . && git commit -a -m 'deploy' && git push origin main --force"
   },
