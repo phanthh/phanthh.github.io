@@ -46,15 +46,14 @@ const FullTimeline = () => (
     <ul>
       <Step title="SAT and IELTS 📝">
         I finished my IELTS and SAT relatively late, but the score was
-        surprisingly good (7.5 and 1520). I started to prepare my applications
-        for university in the US but then realized the financial burden that it
-        would have on my family if I decided to go. It was a tough decision.
+        surprisingly not too bad (7.5 and 1520). I started to prepare my
+        applications for university in the US but then realized the financial
+        burden that it would have on my family if I decided to go. It was a
+        tough decision.
       </Step>
       <Step title="Realizing my peers are going international ✈️">
-        Many of my fellow peers started to prepare for college in the US, Europe
-        and Singapore, which is something I have no experience or even
-        considered at all. I was surprised and feel that I should do something
-        about it.
+        Many of my fellow peers started to prepare for college abroad, which is
+        something I have no experience or even considered at all.
       </Step>
     </ul>
     <Divider />
@@ -65,22 +64,21 @@ const FullTimeline = () => (
         and the acceptance rate was only 0.5% for the Math major. I was
         extremely lucky. The class was filled with talented students, not only
         excell at math but nearly all subjects: Physic, History, Foreign
-        Language,... I feel humbled, inspired but also scared.
+        Language,... I feel humbled but also deeply inspired.
       </Step>
       <Step title="Silver medal 🥈 - Secondary school Math olympiad">
         I didn't pick up mathematics right away, but I started to like the
         euphoria when discovering an unique solution on my own and the
         excitement during competitions. Suprisingly, I got into the municipal
-        team earn myself a medal.
+        team and earn myself a medal.
       </Step>
     </ul>
     <Divider />
     <Year>2012</Year>
     <ul>
       <Step title="First Tablet 💻">
-        This was the earliest portal to the Internet at the time for me and for
-        my whole family since we didn't earn much during the time. The tablet
-        was a Blackberry Playbook and a whole lot of Minecraft videos was
+        This was the earliest portal to the Internet at the time for me. The
+        tablet was a Blackberry Playbook and a whole lot of online videos was
         watched by me at the time.
       </Step>
     </ul>
@@ -88,10 +86,10 @@ const FullTimeline = () => (
     <Year>2011</Year>
     <ul>
       <Step title="First Encyclopedia 📖">
-        My uncle give me a big encyclopedia full of imagery about the world as a
-        Chrismas present. Looking back, this is one of the crucial moment in my
-        life and I got really into science and mathematics at the time. Thank
-        you uncle Hoang!
+        My uncle give me a gigantic encyclopedia full of imagery about the world
+        as a Chrismas present. Looking back, this is one of the pivotal moment
+        in my life that built up my fascination for natural science and
+        curiosity about the world. Thank you uncle Hoang!
       </Step>
     </ul>
     <Divider />
@@ -114,10 +112,11 @@ export default function Timeline() {
       <ul>
         <Step title="Ignite 2021! 🔥">
           Ignite was a startup acceleration program hosted annually every summer
-          at Aalto. I was a cofounder and was in charge of the development of
-          our company websites and piloting product. I also learned about many
-          aspect of entrepreneurship and business managment during the program.
-          It was a eye-opening experience for me.
+          at Aalto. I was a one of the cofounders/member of the team and was in
+          charge of the development of our company websites and piloting
+          product. I also learned about many aspect of entrepreneurship and
+          business managment during the program. It was a eye-opening experience
+          for me, a sneakpeak into the world of startups.
         </Step>
         <Step title="Finally arrive in Finland! 🇫🇮"></Step>
       </ul>
@@ -126,17 +125,18 @@ export default function Timeline() {
       <ul>
         <Step title="Got accepted to Aalto! 🎒">
           I have always dreamt of studying abroad in Europe and Finland stoodout
-          for me as a perfect place for an introvert like me 😅. When I received
-          the acceptance email, I keep smiling like an idiot for the entire of
-          my computer science class lol. However, COVID hits and unfortunately,
-          all my plans were thrown out of the window 🥺.
+          for me as a perfect place for higher education. When I received the
+          acceptance email, the excitement I experience was indescribable.
+          However, COVID hits and unfortunately, all my plans were thrown out of
+          the window.
         </Step>
         <Step title="First year in HCMUT - Computer Science">
-          This was also the time I got my first laptop that is able to run a
-          browser properly. Honestly, I nearly switch my major to International
-          Business at a prestigous business school in Vietnam, but decided to go
-          with my gut and go for Computer Science. This was one of few time that
-          I made a good decision 😆.
+          This was also the time I got my first laptop that was able to run a
+          browser properly. With barely any experience with computer, I nearly
+          switch my university major to International Business at a prestigous
+          business school in Vietnam, but decided to go with my gut and go for
+          Computer Science. This turned out to be one of the best decision that
+          I had ever made.
         </Step>
       </ul>
       <Divider />
@@ -146,7 +146,7 @@ export default function Timeline() {
           I became a valedictorian! To say that I was surprised was an
           underestimate. I studied really hard and I was grateful that all the
           hardwork and long hours paid off. I couldn't have done it without the
-          support from my family though.
+          support from my family, friends and teachers along the way.
         </Step>
       </ul>
       <Divider />
