@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import Timeline from '../components/Timeline';
 import Container from 'components/Container';
 
@@ -14,10 +12,10 @@ export default function About() {
           <p>
             Hi, I'm Hau - an asprising data scientist, web developer and Linux
             enthusiast. Solving problems and learning news thing about the
-            world, especially technology and mathematics, are two of my bizzare
-            hobbies. Complexity intrigues me deeply and always make me motivated
-            to understand more about it. At the moment, I am studying full time
-            at{' '}
+            world, especially technology and mathematics, are two of my
+            dedicated life-long hobbies. Complexity intrigues me deeply and
+            always make me motivated to understand it. At the moment, I am
+            studying full time at{' '}
             <a
               href="https://www.aalto.fi/en"
               target="_blank"
@@ -38,8 +36,8 @@ export default function About() {
             Around this time, I also developed an interest in programming and
             technology, which leads me to study Computer Science and eventually
             Data science. After my first college year, I decided to pursue a
-            degree abroad and decided to start all over again in the beautiful
-            country of Finland.
+            degree abroad and to start all over again in the beautiful country
+            of Finland.
           </p>
         </div>
         <Timeline />
