@@ -73,7 +73,8 @@ export default function MobileMenu() {
           <MenuItem href="/" text="Home" delay={150} />
           <MenuItem href="/about" text="About" delay={200} />
           <MenuItem href="/blog" text="Blog" delay={250} />
-          <MenuItem href="/uses" text="Uses" delay={300} />
+          <MenuItem href="/code" text="Code" delay={300} />
+          <MenuItem href="/uses" text="Uses" delay={350} />
         </ul>
       )}
     </>
