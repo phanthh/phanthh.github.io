@@ -1,0 +1,106 @@
+var flock;
+var alignmentCoef = 1;
+var cohesionCoef = 1;
+var separationCoef = 1.2;
+
+class Boid {
+  constructor() {
+    this.pos = createVector(random(width), random(height));
+    this.vel = p5.Vector.random2D();
+    this.vel.setMag(random(2, 5));
+    this.acl = createVector();
+    this.perception = 50;
+    this.maxacl = 0.6;
+    this.maxvel = 4;
+  }
+
+  edge() {
+    if (this.pos.x > width) {
+      this.pos.x = 0;
+    } else if (this.pos.x < 0) {
+      this.pos.x = width;
+    } else if (this.pos.y < 0) {
+      this.pos.y = height;
+    } else if (this.pos.y > height) {
+      this.pos.y = 0;
+    }
+  }
+
+  check(boids) {
+    let alignment = createVector();
+    let cohesion = createVector();
+    let seperation = createVector();
+    let total = 0;
+    for (let other of boids) {
+      let d = dist(this.pos.x, this.pos.y, other.pos.x, other.pos.y);
+      if (other !== this && d < this.perception) {
+        alignment.add(other.vel);
+        cohesion.add(other.pos);
+
+        let diff = p5.Vector.sub(this.pos, other.pos);
+        diff.div(d);
+        seperation.add(diff);
+
+        total++;
+      }
+    }
+    if (total > 0) {
+      alignment.div(total);
+      alignment.sub(this.vel);
+      alignment.limit(this.maxacl);
+
+      cohesion.div(total);
+      cohesion.sub(this.pos);
+      cohesion.limit(this.maxacl);
+
+      seperation.div(total);
+      seperation.limit(this.maxacl);
+
+      alignment.mult(alignmentCoef);
+      cohesion.mult(cohesionCoef);
+      seperation.mult(separationCoef);
+
+      this.acl.add(seperation);
+      this.acl.add(alignment);
+      this.acl.add(cohesion);
+    } else {
+      return;
+    }
+  }
+
+  show() {
+    push();
+    strokeWeight(3);
+    stroke(0, 0, 0, 150);
+    let dir = this.vel.copy();
+    dir.setMag(10);
+    translate(this.pos.x, this.pos.y);
+    line(0, 0, dir.x, dir.y);
+    pop();
+  }
+
+  update() {
+    this.edge();
+    this.check(flock);
+    this.pos.add(this.vel);
+    this.vel.add(this.acl);
+    this.vel.limit(this.maxvel);
+    this.acl.mult(0);
+  }
+}
+
+function setup() {
+  createCanvas(1280, 720);
+  flock = [];
+  for (let i = 0; i < 150; i++) {
+    flock.push(new Boid());
+  }
+}
+
+function draw() {
+  background(255);
+  flock.forEach((boid) => {
+    boid.update();
+    boid.show();
+  });
+}

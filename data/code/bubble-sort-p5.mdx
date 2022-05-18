@@ -1,0 +1,49 @@
+---
+title: 'Bubble Sort'
+publishedAt: '2022-05-18'
+summary: 'Bubble Sort visualized with p5.js'
+---
+
+<CodeIframe
+  src="/source/bubble-sort-p5/index.html"
+  width={1280}
+  height={720}
+  scalew={0.525}
+  scaleh={0.6}
+/>
+
+```js
+var bar = [];
+
+function setup() {
+  createCanvas(1280, 720);
+  for (let i = 0; i < width; i++) {
+    bar[i] = random(height);
+  }
+  i = width - 1;
+}
+
+function draw() {
+  background(0);
+  stroke(255);
+  if (i >= 0) {
+    for (let j = 0; j <= i; j++) {
+      if (bar[j] > bar[j + 1]) {
+        let temp = bar[j];
+        bar[j] = bar[j + 1];
+        bar[j + 1] = temp;
+      }
+    }
+    i--;
+  } else {
+    setup();
+  }
+  for (let i = 0; i < width; i++) {
+    line(i, height, i, height - bar[i]);
+  }
+}
+
+function mouseClicked() {
+  setup();
+}
+```

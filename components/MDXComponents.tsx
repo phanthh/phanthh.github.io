@@ -4,6 +4,7 @@ import ImageWithTheme from 'components/ImageWithTheme';
 import ProsCard from 'components/ProsCard';
 import Step from 'components/Step';
 import Link from 'next/link';
+import CodeIframe from 'components/CodeIframe';
 
 const CustomLink = (props) => {
   const href = props.href;
@@ -25,6 +26,7 @@ function RoundedImage(props) {
 }
 
 const MDXComponents = {
+  CodeIframe: CodeIframe,
   Image: RoundedImage,
   ImageWithTheme,
   a: CustomLink,

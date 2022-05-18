@@ -11,7 +11,7 @@ export default function Container(props) {
   const meta = {
     title: 'Hau Phan – Data analyst, Linux enthusiast, Writer.',
     description: `Data scientist, JavaScript enthusiast, and researcher.`,
-    image: `${domain}/static/images/banner.png`,
+    image: props.image ? props.image : `${domain}/images/avatar.jpg`,
     type: 'website',
     ...customMeta
   };

@@ -29,9 +29,7 @@ export default function Footer() {
             </a>
           </Link>
           <Link href="/blogs">
-            <a className="text-gray-500 hover:text-gray-600 transition">
-              Blog
-            </a>
+            <a className="text-gray-500 hover:text-gray-600 transition">Blog</a>
           </Link>
         </div>
         <div className="flex flex-col space-y-4">
@@ -48,16 +46,22 @@ export default function Footer() {
             <a className="text-gray-500 hover:text-gray-600 transition">Uses</a>
           </Link>
           <Link href="/tba">
-            <a className="text-gray-500 hover:text-gray-600 transition">
-              TBA
-            </a>
+            <a className="text-gray-500 hover:text-gray-600 transition">TBA</a>
           </Link>
           <Link href="/tba">
-            <a className="text-gray-500 hover:text-gray-600 transition">
-              TBA
-            </a>
+            <a className="text-gray-500 hover:text-gray-600 transition">TBA</a>
           </Link>
         </div>
+      </div>
+      <div className="flex justify-center w-full">
+        <p className="text-gray-500">
+          Inspired by{' '}
+          <Link href="https://leerob.io/">
+            <a className="text-gray-500 hover:text-gray-600 transition underline">
+              leerob.io
+            </a>
+          </Link>
+        </p>
       </div>
     </footer>
   );

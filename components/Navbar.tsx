@@ -38,9 +38,9 @@ export default function Navbar() {
         <MobileMenu />
         <NavItem href="/" text="Home" />
         <NavItem href="/about" text="About" />
-        {/* <NavItem href="/guestbook" text="Guestbook" /> */}
-        {/* <NavItem href="/dashboard" text="Dashboard" /> */}
         <NavItem href="/blog" text="Blog" />
+        <NavItem href="/code" text="Code" />
+        {/* <NavItem href="/dashboard" text="Dashboard" /> */}
         {/* <NavItem href="/snippets" text="Snippets" /> */}
       </div>
       <button

@@ -9,6 +9,10 @@
   </url>
 
   <url>
+    <loc>https://phanthh.github.io/code</loc>
+  </url>
+
+  <url>
     <loc>https://phanthh.github.io</loc>
   </url>
 
@@ -22,5 +26,37 @@
 
   <url>
     <loc>https://phanthh.github.io/blog/surveillance-capitalism-overview</loc>
+  </url>
+
+  <url>
+    <loc>https://phanthh.github.io/code/3d-terrain-p5</loc>
+  </url>
+
+  <url>
+    <loc>https://phanthh.github.io/code/bubble-sort-p5</loc>
+  </url>
+
+  <url>
+    <loc>https://phanthh.github.io/code/chain-attraction-p5</loc>
+  </url>
+
+  <url>
+    <loc>https://phanthh.github.io/code/chaos-fractal-p5</loc>
+  </url>
+
+  <url>
+    <loc>https://phanthh.github.io/code/flocking-p5</loc>
+  </url>
+
+  <url>
+    <loc>https://phanthh.github.io/code/maze-generation-p5</loc>
+  </url>
+
+  <url>
+    <loc>https://phanthh.github.io/code/peak-finding-p5</loc>
+  </url>
+
+  <url>
+    <loc>https://phanthh.github.io/code/recaman-sequence-p5</loc>
   </url>
 </urlset>
