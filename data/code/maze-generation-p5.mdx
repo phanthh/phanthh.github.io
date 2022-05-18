@@ -9,7 +9,7 @@ summary: 'Maze Generation with Backtracking visualized with p5.js'
   width={1280}
   height={720}
   scalew={0.525}
-  scaleh={0.6}
+  scaleh={0.525}
 />
 
 ```js
@@ -69,7 +69,9 @@ class Cell {
     }
   };
 }
+```
 
+```js
 function removeWalls(a, b) {
   if (a.j > b.j) {
     a.walls[0] = false;

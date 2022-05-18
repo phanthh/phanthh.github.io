@@ -21,14 +21,6 @@
   </url>
 
   <url>
-    <loc>https://phanthh.github.io/blog/linux-windown-dualboot</loc>
-  </url>
-
-  <url>
-    <loc>https://phanthh.github.io/blog/surveillance-capitalism-overview</loc>
-  </url>
-
-  <url>
     <loc>https://phanthh.github.io/code/3d-terrain-p5</loc>
   </url>
 
@@ -49,6 +41,10 @@
   </url>
 
   <url>
+    <loc>https://phanthh.github.io/code/fourier-series-p5</loc>
+  </url>
+
+  <url>
     <loc>https://phanthh.github.io/code/maze-generation-p5</loc>
   </url>
 
@@ -58,5 +54,13 @@
 
   <url>
     <loc>https://phanthh.github.io/code/recaman-sequence-p5</loc>
+  </url>
+
+  <url>
+    <loc>https://phanthh.github.io/blog/linux-windown-dualboot</loc>
+  </url>
+
+  <url>
+    <loc>https://phanthh.github.io/blog/surveillance-capitalism-overview</loc>
   </url>
 </urlset>
