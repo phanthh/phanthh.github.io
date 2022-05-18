@@ -13,7 +13,7 @@ export default function CodeIframe({
 }) {
   return (
     <div
-      className="w-full rounded-lg overflow-hidden"
+      className="w-full hidden md:block rounded-lg overflow-hidden"
       style={{ height: height * scaleh }}
     >
       <iframe
@@ -21,7 +21,6 @@ export default function CodeIframe({
         frameBorder="no"
         loading="lazy"
         scrolling="no"
-        allowTransparency={true}
         allowFullScreen={true}
         style={{
           transform: `scale(${scalew},${scaleh})`,
